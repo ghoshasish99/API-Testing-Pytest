@@ -5,6 +5,7 @@ import jsonpath
 baseUrl = "https://reqres.in/"
 
 def test_fetch_user() :
+    name="amit"
     path = "api/users/2"
     response = requests.get(url=baseUrl+path)
     responseJson = json.loads(response.text)
