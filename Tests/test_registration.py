@@ -6,6 +6,7 @@ import random
 baseUrl = "https://reqres.in/"
 
 def test_successful_registration() :
+    surname="malbari"
     path = "api/register"
     response = requests.post(url=baseUrl+path,json=json.loads('{"email": "eve.holt@reqres.in","password": "'+randomDigits(5)+'"}'))
     responseJson = json.loads(response.text)
